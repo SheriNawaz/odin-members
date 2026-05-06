@@ -1,13 +1,11 @@
 import Hero from "./Hero"
 import LatestPosts from "./LatestPosts"
-import Navbar from "./Navbar"
 
-function HomePage(){
+function HomePage({user, setUser}){
     return (
         <div className="flex flex-col w-full">
-            <Navbar />
-            <Hero />
-            <LatestPosts />
+            <Hero user={user} setUser={setUser}/>
+            <LatestPosts user={user} setUser={setUser} />
         </div>
     )
 }
