@@ -8,7 +8,7 @@ function Signup({setUser}){
     const [form, setForm] = useState({
       username: "",
       firstname: "",
-      firstname: "",
+      lastname: "",
       password: "",
     })
     const [error, setError] = useState("");
@@ -56,7 +56,7 @@ function Signup({setUser}){
                             onChange={(e)=>setForm({ ...form, password:e.target.value })}/>
                         </div>
                         <button type="submit" className="w-full bg-black text-white py-2 rounded-lg font-semibold hover:bg-gray-800 transition cursor-pointer mt-6">
-                            Login
+                            Register
                         </button>                    
                     </form>
                 </div>

@@ -10,7 +10,8 @@ function LatestPosts({user, setUser}){
                 const res = await axios.get("/api/posts");
                 setPosts(res.data);
             } catch (err) {
-                setPosts(err)
+                setPosts([]); 
+                console.log(err);
             } 
         }
         fetchPosts();
