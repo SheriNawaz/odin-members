@@ -12,8 +12,8 @@ const authRouter = require('./routes/authRouter');
 const postRouter = require('./routes/postRouter');
 
 app.use(cors({
-  origin: 'http://https://odin-members-cyan.vercel.app/',  
-  credentials: true                  
+  origin: "https://odin-members-cyan.vercel.app",
+  credentials: true
 }));
 app.use(express.json());
 app.use(cookieParser());
