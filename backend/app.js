@@ -12,7 +12,7 @@ const authRouter = require('./routes/authRouter');
 const postRouter = require('./routes/postRouter');
 
 app.use(cors({
-  origin: 'http://localhost:5173',  
+  origin: 'http://https://odin-members-cyan.vercel.app/',  
   credentials: true                  
 }));
 app.use(express.json());
