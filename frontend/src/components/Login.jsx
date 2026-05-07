@@ -14,7 +14,7 @@ function Login({setUser}){
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await axios.post("/api/auth/login", form);
+        const res = await axios.post("https://odin-members-v7yb.onrender.com/api/auth/login", form);
         setUser(res.data.user);
         navigate('/');
       } catch (err) {

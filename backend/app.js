@@ -12,7 +12,7 @@ const authRouter = require('./routes/authRouter');
 const postRouter = require('./routes/postRouter');
 
 app.use(cors({
-  origin: 'http://localhost:5173',  
+  origin: 'https://odin-members-v7yb.onrender.com/',  
   credentials: true                  
 }));
 app.use(express.json());

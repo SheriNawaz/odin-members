@@ -7,7 +7,7 @@ function LatestPosts({user, setUser}){
     useEffect(()=>{
         const fetchPosts = async()=>{
             try{
-                const res = await axios.get("/api/posts");
+                const res = await axios.get("https://odin-members-v7yb.onrender.com/api/posts");
                 setPosts(res.data);
             } catch (err) {
                 setPosts([]); 
@@ -19,7 +19,7 @@ function LatestPosts({user, setUser}){
 
     const handleDelete = async (id) => {
     try {
-        await axios.delete(`/api/post/${id}`);
+        await axios.delete(`https://odin-members-v7yb.onrender.com//api/post/${id}`);
 
         setPosts(prev => prev.filter(post => post.id !== id));
 

@@ -6,7 +6,7 @@ function Navbar({user, setUser}){
     const navigate = useNavigate()
 
     const handleLogout = async () => {
-        await axios.post("/api/auth/logout");
+        await axios.post("https://odin-members-v7yb.onrender.com/api/auth/logout");
         setUser(null);
         navigate('/');
     }

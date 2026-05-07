@@ -16,7 +16,7 @@ function Signup({setUser}){
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await axios.post("/api/auth/register", form);
+        const res = await axios.post("https://odin-members-v7yb.onrender.com/api/auth/register", form);
         setUser(res.data);
         navigate('/');
       } catch (err) {

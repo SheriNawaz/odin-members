@@ -15,7 +15,7 @@ function CreatePost({user, setUser}){
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await axios.post("/api/post", form);
+        const res = await axios.post("https://odin-members-v7yb.onrender.com/api/post", form);
         navigate('/')
       } catch (err) {
         setError("Unexpected Error Occured");
